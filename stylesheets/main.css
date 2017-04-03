@@ -1,0 +1,51 @@
+nav {
+  font: 120% "Lato", Heveltica, sans-serif;
+  background-color: #0C557F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto; }
+    nav ul li {
+      background-color: inherit;
+      margin: 0px;
+      padding: 0px;
+      display: inline-block; }
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block; }
+
+body {
+  font: "Lato", Heveltica, sans-serif;
+  font-size: 100%; }
+
+@media screen and (max-width: 767px) {
+  li {
+    display: block; }
+    li a {
+      font-size: 0.8em;
+      padding: 10px; } }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  li a {
+    font-size: 1em;
+    padding: 12px; } }
+@media screen and (min-width: 1024px) {
+  li {
+    height: auto; }
+    li a {
+      font-size: 20px;
+      padding: 20px 50px 20px 50px; }
+      li a:hover {
+        background-color: #16A0EF;
+        -moz-transition: background-color 0.25s ease;
+        -o-transition: background-color 0.25s ease;
+        -webkit-transition: background-color 0.25s ease;
+        transition: background-color 0.25s ease; } }
+
+/*# sourceMappingURL=main.css.map */

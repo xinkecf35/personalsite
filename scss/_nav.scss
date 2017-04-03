@@ -1,0 +1,58 @@
+@import "variables";
+nav {
+  font: 120% $font-stack;
+  background-color: $primarycolor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    li {
+        background-color: inherit;
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+}
+@mixin nav-sm {
+    li {
+        display: block;
+        a {
+            font-size: 0.8em;
+            padding: 10px;
+        }
+    }
+}
+@mixin nav-md {
+    li{
+        a {
+            font-size: 1em;
+            padding: 12px;
+        }
+    }
+}
+@mixin nav-lg {
+    li {
+        height: auto;
+        a {
+            font-size: 20px;
+            padding: 20px 50px 20px 50px ;
+            &:hover {
+                background-color: $secondarycolor;
+                @include transition(background-color 0.25s ease);
+            }
+        }
+
+    }
+}

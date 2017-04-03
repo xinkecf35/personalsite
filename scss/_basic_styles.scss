@@ -1,0 +1,11 @@
+@import "variables";
+body {
+    font: $font-stack;
+    font-size: 100%;
+}
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.grid-cell {
+    flex: 1 1 auto;
+}
+.grid-cell-2 {
+    flex: 2 1 auto;
+}

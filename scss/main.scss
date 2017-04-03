@@ -1,0 +1,14 @@
+@import "nav";
+@import "basic_styles";
+//Mobile
+@media screen and (max-width: 767px) {
+    @include nav-sm;
+}
+//Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    @include nav-md;
+}
+//Desktop
+@media screen and (min-width: 1024px){
+    @include nav-lg;
+}
