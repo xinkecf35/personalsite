@@ -1,7 +1,6 @@
 nav {
-  font: 120% "Lato", Heveltica, sans-serif;
-  background-color: #0C557F;
-  position: fixed;
+  position: absolute;
+  background-color: rgba(12, 85, 137, 0.75);
   top: 0;
   left: 0;
   width: 100%;
@@ -9,10 +8,8 @@ nav {
   nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
-    height: auto; }
+    padding: 0; }
     nav ul li {
-      background-color: inherit;
       margin: 0px;
       padding: 0px;
       display: inline-block; }
@@ -21,31 +18,62 @@ nav {
     color: #ffffff;
     display: block; }
 
+.fix-nav {
+  position: fixed;
+  background-color: #0C557F; }
+  .fix-nav nav ul li a:active {
+    color: #ffffff;
+    background-color: rgba(22, 160, 239, 0.75); }
+
 body {
-  font: "Lato", Heveltica, sans-serif;
-  font-size: 100%; }
+  font-family: "Lato", Heveltica, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1; }
+
+#home {
+  background-image: url(../images/ValleyForgeDesktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+  z-index: 20; }
 
 @media screen and (max-width: 767px) {
-  li {
-    display: block; }
-    li a {
-      font-size: 0.8em;
-      padding: 10px; } }
+  nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #0C557F; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        font-size: 0.9em;
+        padding: 12px 24px 18px 24px;
+        color: #ffffff; }
+        nav ul li a:active {
+          color: #ffffff;
+          background-color: rgba(22, 160, 239, 0.75); } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  li a {
+  nav ul li a {
     font-size: 1em;
-    padding: 12px; } }
+    padding: 18px 28px 18px 28px; }
+    nav ul li a:active {
+      color: #ffffff;
+      background-color: rgba(22, 160, 239, 0.75); } }
 @media screen and (min-width: 1024px) {
-  li {
-    height: auto; }
-    li a {
-      font-size: 20px;
-      padding: 20px 50px 20px 50px; }
-      li a:hover {
-        background-color: #16A0EF;
-        -moz-transition: background-color 0.25s ease;
-        -o-transition: background-color 0.25s ease;
-        -webkit-transition: background-color 0.25s ease;
-        transition: background-color 0.25s ease; } }
+  nav ul li a {
+    font-size: 20px;
+    padding: 20px 50px 20px 50px; }
+    nav ul li a:hover {
+      color: #ffffff;
+      background-color: rgba(22, 160, 239, 0.75);
+      -moz-transition: background-color 0.5s ease;
+      -o-transition: background-color 0.5s ease;
+      -webkit-transition: background-color 0.5s ease;
+      transition: background-color 0.5s ease; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,10 @@
 $primarycolor: #0C557F;
 $secondarycolor: #16A0EF;
 $font-stack: "Lato", Heveltica, sans-serif;
+//Mixins
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}

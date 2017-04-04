@@ -1,8 +1,7 @@
 @import "variables";
 nav {
-  font: 120% $font-stack;
-  background-color: $primarycolor;
-  position: fixed;
+  position: absolute;
+  background-color: rgba(12, 85, 137, 0.75);
   top: 0;
   left: 0;
   width: 100%;
@@ -11,9 +10,7 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    height: auto;
     li {
-        background-color: inherit;
         margin: 0px;
         padding: 0px;
         display: inline-block;
@@ -21,38 +18,80 @@ nav {
   }
   a {
     text-decoration: none;
-    color: #ffffff;
+    color:#ffffff;
     display: block;
   }
 }
+@mixin hover {
+    color: #ffffff;
+    background-color: rgba(22,160,239,0.75);
+}
+//fix nav after scroll
+.fix-nav {
+    position: fixed;
+    background-color: $primarycolor;
+    nav{
+        ul {
+            li {
+                a {
+                    &:active {
+                        @include hover;
+                    }
+                }
+            }
+        }
+    }
+}
 @mixin nav-sm {
-    li {
-        display: block;
-        a {
-            font-size: 0.8em;
-            padding: 10px;
+    nav {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: $primarycolor;
+        ul {
+            li {
+                display: block;
+                a {
+                    font-size: 0.9em;
+                    padding: 12px 24px 18px 24px;
+                    color: #ffffff;
+                    &:active {
+                        @include hover;
+                    }
+                }
+            }
         }
     }
 }
 @mixin nav-md {
-    li{
-        a {
-            font-size: 1em;
-            padding: 12px;
+    nav {
+        ul {
+            li{
+                a {
+                    font-size: 1em;
+                    padding: 18px 28px 18px 28px;
+                    &:active {
+                        @include hover;
+                    }
+                }
+            }
         }
     }
 }
 @mixin nav-lg {
-    li {
-        height: auto;
-        a {
-            font-size: 20px;
-            padding: 20px 50px 20px 50px ;
-            &:hover {
-                background-color: $secondarycolor;
-                @include transition(background-color 0.25s ease);
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 20px;
+                    padding: 20px 50px 20px 50px ;
+                    &:hover {
+                        @include hover;
+                        @include transition(background-color 0.50s ease);
+                    }
+                }
+
             }
         }
-
     }
 }

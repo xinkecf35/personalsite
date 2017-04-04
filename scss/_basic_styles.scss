@@ -1,11 +1,19 @@
 @import "variables";
 body {
-    font: $font-stack;
+    font-family: $font-stack;
     font-size: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
 }
-@mixin transition($transition...) {
-    -moz-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
+//Basics IDs
+#home {
+    background-image: url(../images/ValleyForgeDesktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    z-index: 20;
 }
