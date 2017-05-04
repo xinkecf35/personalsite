@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 }
-.grid-cell {
+.grid-cell-1 {
     flex: 1 1 auto;
 }
 .grid-cell-2 {

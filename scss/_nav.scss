@@ -1,7 +1,7 @@
 @import "variables";
 nav {
-  position: absolute;
-  background-color: rgba(12, 85, 137, 0.75);
+  position: fixed;
+  background-color: rgba(12, 85, 137, 0.3);
   top: 0;
   left: 0;
   width: 100%;
@@ -14,22 +14,22 @@ nav {
         margin: 0px;
         padding: 0px;
         display: inline-block;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          display: block;
+        }
     }
-  }
-  a {
-    text-decoration: none;
-    color:#ffffff;
-    display: block;
   }
 }
 @mixin hover {
     color: #ffffff;
     background-color: rgba(22,160,239,0.75);
 }
-//fix nav after scroll
+// fix nav after scroll
 .fix-nav {
-    position: fixed;
     background-color: $primarycolor;
+    @include transition(all 0.5s ease-in-out);
     nav{
         ul {
             li {
@@ -53,8 +53,7 @@ nav {
                 display: block;
                 a {
                     font-size: 0.9em;
-                    padding: 12px 24px 18px 24px;
-                    color: #ffffff;
+                    padding: 12px 24px 12px 24px;
                     &:active {
                         @include hover;
                     }
@@ -68,8 +67,8 @@ nav {
         ul {
             li{
                 a {
-                    font-size: 1em;
-                    padding: 18px 28px 18px 28px;
+                    font-size: 18px;
+                    padding: 16px 28px 16px 28px;
                     &:active {
                         @include hover;
                     }
@@ -83,8 +82,8 @@ nav {
         ul {
             li {
                 a {
-                    font-size: 20px;
-                    padding: 20px 50px 20px 50px ;
+                    font-size: 18px;
+                    padding: 16px 50px 16px 50px ;
                     &:hover {
                         @include hover;
                         @include transition(background-color 0.50s ease);

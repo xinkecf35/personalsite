@@ -6,8 +6,11 @@
 <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
 <link rel="stylesheet" href="stylesheets/flexgrid.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script src="sticknav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script async src="scrolltolink.js"></script>
+<script async src="highlightnavlinks.js"></script>
+<script async src="sticknav.js"></script>
 </head>
 <!-- Navigation Bar -->
 <body>
@@ -18,13 +21,26 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contacts">Contact</a></li>
             </ul>
         </nav>
     </div>
-    <div id="about" style="height:1000px; background-color:#12fe43;">
+    <div id="about" class="grid" style="height:800px;">
+        <div class="grid-cell-1" style="background-color: #0C557F">
+        </div>
+        <div class="grid-cell-2" style="background-color: #124AE3">
+        </div>
     </div>
-
+    <div id="skills" style="height:800px; background-color:#16F07E">
+    </div>
+    <div id="projects" style="height:800px">
+        <div class="grid-cell-2" style="background-color: #0C557F">
+        </div>
+        <div class="grid-cell-1" style="background-color: #124AE3">
+        </div>
+    </div>
+    <div id="contacts" style="height:800px;">
+        <!-- add in desktop/laptop like form contact form with email as the app -->
+    </div>
 </body>
 </html>
