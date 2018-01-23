@@ -49,10 +49,11 @@ nav {
         left: 0px;
         background-color: $primarycolor;
         ul {
+            display: block;
             li {
                 display: block;
                 a {
-                    font-size: 0.9em;
+                    font-size: 15px;
                     padding: 12px 24px 12px 24px;
                     &:active {
                         @include hover;

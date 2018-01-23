@@ -1,0 +1,41 @@
+@import "variables";
+.text {
+    h3 {
+        text-align: center;
+    }
+    color: #ffffff;
+
+}
+@mixin text-sm {
+    .text {
+
+    }
+}
+@mixin text-md {
+    .text {
+        margin-top: 60px;
+        min-height: 600px;
+        h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            padding: 0px 20px 50px 20px;
+        }
+    }
+}
+@mixin text-lg {
+    .text {
+        margin-top: 60px;
+        min-height: 700px;
+        h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            padding: 0px 20px 50px 20px;
+        }
+    }
+}

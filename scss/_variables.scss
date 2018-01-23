@@ -1,6 +1,7 @@
 $primarycolor: #0C557F;
 $secondarycolor: #16A0EF;
 $font-stack: "Lato", Heveltica, sans-serif;
+$banner-height: 800px;
 //Mixins
 @mixin transition($transition...) {
     -moz-transition:    $transition;

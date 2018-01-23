@@ -1,8 +1,9 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Xinke Chen</title>
 <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" type="text/css">
 <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
 <link rel="stylesheet" href="stylesheets/flexgrid.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -14,32 +15,43 @@
 </head>
 <!-- Navigation Bar -->
 <body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
     <div id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="banner">
+            <h1>Hello. I am Xinke.</h1>
+            <h2>Nice to meet you.</h2>
+            <!-- <h2>Click on any links above or scroll down to see who I am.</h2> -->
+        </div>
     </div>
-    <div id="about" class="grid" style="height:800px;">
-        <div class="grid-cell-1" style="background-color: #0C557F">
+    <div id="about" class="grid">
+        <div class="grid-cell-2" style="background-color: #0C557F">
+            <div class="text">
+                <h3>About</h3>
+                <p>As you can see from above, my name is Xinke (It pronounced Sin-Ka, like Don't Sin-Ka Ship).
+
+                </p>
+            </div>
+        </div>
+        <div class="grid-cell-3" style="background-color: #124AE3">
+        </div>
+    </div>
+    <div id="skills" class="grid-cell-5" style="height:600px; background-color:#16F07E">
+    </div>
+    <div id="projects" class="grid" style="height:600px">
+        <div class="grid-cell-3" style="background-color: #0C557F">
         </div>
         <div class="grid-cell-2" style="background-color: #124AE3">
         </div>
     </div>
-    <div id="skills" style="height:800px; background-color:#16F07E">
-    </div>
-    <div id="projects" style="height:800px">
-        <div class="grid-cell-2" style="background-color: #0C557F">
-        </div>
-        <div class="grid-cell-1" style="background-color: #124AE3">
-        </div>
-    </div>
-    <div id="contacts" style="height:800px;">
+    <div id="contacts" style="height:600px;">
         <!-- add in desktop/laptop like form contact form with email as the app -->
     </div>
 </body>

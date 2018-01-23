@@ -1,14 +1,23 @@
 @import "nav";
 @import "basic_styles";
+@import "banner";
+@import "text";
+
 //Mobile
 @media screen and (max-width: 767px) {
     @include nav-sm;
+    @include banner-sm;
+    @include text-sm;
 }
 //Tablet
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     @include nav-md;
+    @include banner-md;
+    @include text-md;
 }
 //Desktop
 @media screen and (min-width: 1024px){
     @include nav-lg;
+    @include banner-lg;
+    @include text-lg;
 }
