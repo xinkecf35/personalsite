@@ -26,34 +26,65 @@ nav {
     color: #ffffff;
     background-color: rgba(22,160,239,0.75);
 }
+//Mobile-nav
+@mixin hide-mobile-nav {
+    #mobile-nav-button {
+        display: none;
+    }
+}
+
+
 // fix nav after scroll
 .fix-nav {
-    background-color: $primarycolor;
     @include transition(all 0.5s ease-in-out);
+    background-color: $primarycolor;
     nav{
         ul {
-            li {
-                a {
-                    &:active {
-                        @include hover;
-                    }
+            a {
+                &:active {
+                    @include hover;
                 }
             }
         }
     }
 }
 @mixin nav-sm {
+    #mobiel-nav-button {
+        position: absolute;
+        top:0px;
+        left:0px;
+        width: 100%;
+        height: auto;
+    }
+    #mobile-nav-button button{
+        position: absolute;
+        right: 0px;
+        border: none;
+        background-color: $primarycolor;
+        width: 42px;
+        height: 42px;
+        margin: 3px 6px 3px 3px;
+        overflow: visible;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        padding: 0px;
+
+    }
     nav {
         position: fixed;
         top: 0px;
         left: 0px;
         background-color: $primarycolor;
         ul {
-            display: block;
+            position: absolute;
+            top: 52px;
+            background-color: inherit;
+            width: 100%;
             li {
-                display: block;
+                width: 100%;
                 a {
-                    font-size: 15px;
+                    display: block;
+                    font-size: 16px;
                     padding: 12px 24px 12px 24px;
                     &:active {
                         @include hover;
@@ -64,33 +95,30 @@ nav {
     }
 }
 @mixin nav-md {
+    @include hide-mobile-nav;
     nav {
         ul {
-            li{
-                a {
-                    font-size: 18px;
-                    padding: 16px 28px 16px 28px;
-                    &:active {
-                        @include hover;
-                    }
+            a {
+                font-size: 18px;
+                padding: 16px 28px 16px 28px;
+                &:active {
+                    @include hover;
                 }
             }
         }
     }
 }
 @mixin nav-lg {
+    @include hide-mobile-nav;
     nav {
-        ul {
-            li {
-                a {
-                    font-size: 18px;
-                    padding: 16px 50px 16px 50px ;
-                    &:hover {
-                        @include hover;
-                        @include transition(background-color 0.50s ease);
-                    }
+        ul {    
+            a {
+                font-size: 18px;
+                padding: 16px 50px 16px 50px ;
+                &:hover {
+                    @include hover;
+                    @include transition(background-color 0.50s ease);
                 }
-
             }
         }
     }
