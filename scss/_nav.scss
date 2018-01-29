@@ -1,26 +1,27 @@
 @import "variables";
 nav {
-  position: fixed;
-  background-color: rgba(12, 85, 137, 0.3);
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-  ul {
+    position: fixed;
+    background-color: rgba(12, 85, 137, 0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    z-index: 1000;
+    ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    li {
-        margin: 0px;
-        padding: 0px;
-        display: inline-block;
-        a {
-          text-decoration: none;
-          color: #ffffff;
-          display: block;
+        li {
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            a {
+              text-decoration: none;
+              color: #ffffff;
+              display: block;
+            }
         }
     }
-  }
 }
 @mixin hover {
     color: #ffffff;
@@ -49,21 +50,22 @@ nav {
     }
 }
 @mixin nav-sm {
-    #mobiel-nav-button {
-        position: absolute;
+    #mobile-nav-button {
+        position: relative;
         top:0px;
         left:0px;
         width: 100%;
-        height: auto;
+        min-height: 48px;
+        background-color: inherit;
     }
     #mobile-nav-button button{
-        position: absolute;
-        right: 0px;
+        position: relative;
+        left: 0px;
         border: none;
         background-color: $primarycolor;
-        width: 42px;
-        height: 42px;
-        margin: 3px 6px 3px 3px;
+        width: 40px;
+        height: 40px;
+        margin: 3px 3px 3px 6px;
         overflow: visible;
         border: 2px solid #fff;
         border-radius: 8px;
@@ -77,7 +79,7 @@ nav {
         background-color: $primarycolor;
         ul {
             position: absolute;
-            top: 52px;
+            top: 48px;
             background-color: inherit;
             width: 100%;
             li {
