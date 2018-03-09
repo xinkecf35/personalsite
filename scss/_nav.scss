@@ -50,12 +50,15 @@ nav {
     }
 }
 @mixin nav-sm {
+    .nav-mobile-hide {
+        display: none;
+    }
     #mobile-nav-button {
         position: relative;
         top:0px;
         left:0px;
         width: 100%;
-        min-height: 48px;
+        min-height: 54px;
         background-color: inherit;
     }
     #mobile-nav-button button{
@@ -65,7 +68,7 @@ nav {
         background-color: $primarycolor;
         width: 40px;
         height: 40px;
-        margin: 3px 3px 3px 6px;
+        margin: 6px 6px 6px 10px;
         overflow: visible;
         border: 2px solid #fff;
         border-radius: 8px;
