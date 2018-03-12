@@ -3,7 +3,7 @@ $(document).ready(function () {
     var about = $("#about");
     var height = about.offset().top;
     $(window).scroll(function (event) {
-        if ($(window).scrollTop() + 5 > height) {
+        if ($(window).scrollTop() + 5 > height - nav.height()) {
             nav.addClass("fix-nav");
         } else {
             nav.removeClass("fix-nav");
